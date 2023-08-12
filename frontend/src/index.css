@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(127, 187, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 150px;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+.error {
+  color: red;
+  animation: vibrate 0.3s linear;
+}
+
+.hidden {
+  display: none;
+}
